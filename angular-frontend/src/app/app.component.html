@@ -1,0 +1,95 @@
+<header>
+  <mat-toolbar color="primary">
+    <span>Medify</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/about">About</button>
+    <button mat-button routerLink="/features">Features</button>
+    <button mat-button routerLink="/contact">Contact</button>
+    <button mat-raised-button color="accent" (click)="onLogin()">Login</button>
+    <button mat-raised-button color="accent" (click)="onSignup()">Sign Up</button>
+  </mat-toolbar>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="mat-display-large">Revolutionizing Healthcare with Medify</h1>
+      <p class="mat-body-large">Your secure and decentralized solution for managing health records.</p>
+      <button mat-raised-button color="primary">Get Started</button>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>About Medify</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Medify leverages cutting-edge blockchain technology to provide secure, universal access to your health records. Built with Angular and powered by Cardano.</p>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section id="features" class="features">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Decentralized Health Records</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Your data is safe, secure, and accessible anytime, anywhere.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Smart Billing</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Seamless payments and billing with blockchain-powered smart contracts.</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Trusted Identity</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Manage your digital identity securely with Atala PRISM.</p>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
+  <section id="contact" class="contact">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Contact Us</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form>
+          <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Your Name">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Your Email" type="email">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea matInput placeholder="Your Message"></textarea>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary" type="submit">Send</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </section>
+</main>
+
+<footer>
+  <mat-toolbar color="primary">
+    <span>&copy; 2024 Medify. All Rights Reserved.</span>
+  </mat-toolbar>
+</footer>
