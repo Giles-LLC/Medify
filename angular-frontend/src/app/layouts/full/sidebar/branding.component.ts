@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
         />
       </a>
     </div>
+    
   `,
 })
 export class BrandingComponent {
